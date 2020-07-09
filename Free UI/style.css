@@ -1,0 +1,27 @@
+.full-width { width: 100%; } .top { position: absolute; left: 0px; top: 0px; height: 100px; }
+.flex-box { display: flex; }
+.ui-button {
+    color: #C00000;
+    stroke: maroon;
+    background-color: black;
+    outline-color: black;
+    width: 25%;
+    font-size: 40px;
+    box-shadow: 0px -1px 5px darkblue;
+    user-select: none;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ui-button:hover {
+    box-shadow: -1px 5px 5px darkblue;
+    transition: box-shadow 0.5s, background-color 0.5s;
+    color: #C00000;
+    stroke: maroon;
+    background-color: white;
+    outline-color: white;
+}
+.ui-button:not(hover) {
+    box-shadow: 0px -1px 5px darkblue;
+    transition: box-shadow 0.5s, background-color 0.5s;
+}
