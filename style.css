@@ -1,5 +1,21 @@
-.full-width { width: 100%; } .top { position: absolute; left: 0px; top: 0px; height: 100px; }
-.flex-box { display: flex; }
+.full-width {
+    width: 100%;
+}
+.full-width>* { /* all direct children of .full-width */
+    display: block;
+}
+
+.top {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100px;
+}
+
+.flex-box {
+    display: flex;
+}
+
 .ui-button {
     color: #C00000;
     stroke: maroon;
@@ -12,11 +28,13 @@
     vertical-align: middle;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .ui-button:hover {
     transition: background-color 0.5s;
     color: #C00000;
     background-color: gray;
 }
+
 .ui-button:not(hover) {
     transition: background-color 0.5s;
 }
