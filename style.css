@@ -11,6 +11,10 @@
 
 .flex-box {
     display: flex;
+    justify-content: stretch;
+}
+.flex-box>* {
+    flex-grow: 1;
 }
 
 .ui-button {
