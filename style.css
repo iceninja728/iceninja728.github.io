@@ -1,9 +1,6 @@
 .full-width {
     width: 100%;
 }
-.full-width>* { /* all direct children of .full-width */
-    display: block;
-}
 
 .top {
     position: absolute;
