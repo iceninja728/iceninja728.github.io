@@ -1,18 +1,36 @@
+body {
+    background-color: rgb(53, 53, 53);
+    align-content: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+    max-width: 2000px;
+    background-color: gray;
+    border: 5px solid black;
+}
+
 .full-width {
     width: 100%;
 }
 
 .top {
-    position: absolute;
+    position: fixed;
     left: 0px;
     top: 0px;
     height: 100px;
+}
+
+.top+* {
+    margin-top: 100px;
 }
 
 .flex-box {
     display: flex;
     justify-content: stretch;
 }
+
 .flex-box>* {
     flex-grow: 1;
 }
@@ -27,7 +45,6 @@
     user-select: none;
     text-align: center;
     vertical-align: middle;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .ui-button:hover {
@@ -38,4 +55,31 @@
 
 .ui-button:not(hover) {
     transition: background-color 0.5s;
+}
+
+.important {
+    max-width: 2000px;
+    height: 50px;
+    font-size: xx-large;
+    vertical-align: top;
+    background-color: gray;
+    border: 5px solid black;
+    overflow: hidden;
+    transition: all 60s ease-in;
+}
+
+.important:hover {
+    cursor: wait;
+    height: 1000px;
+}
+
+.fake-ad {
+    display: flex;
+    width: 1000px;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    margin: 0 auto;
 }
