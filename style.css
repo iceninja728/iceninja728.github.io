@@ -13,26 +13,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .ui-button:hover {
-    transition: box-shadow 0.5s, background-color 0.5s;
+    transition: background-color 0.5s;
     color: #C00000;
-    stroke: maroon;
-    background-color: white;
-    outline-color: white;
+    background-color: gray;
 }
 .ui-button:not(hover) {
-    transition: box-shadow 0.5s, background-color 0.5s;
-}
-.song-list {
-    position: absolute;
-    top: 110px;
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-    left: 10%;
-    width: 80%;
-}
-.song-list a {
-    text-decoration-color: mediumblue;
-    color: black;
-
+    transition: background-color 0.5s;
 }
